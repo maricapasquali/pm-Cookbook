@@ -1,0 +1,130 @@
+\documentclass{article}
+\usepackage{graphicx} % Required for inserting images
+\usepackage[italian]{babel}
+\usepackage[hidelinks]{hyperref}
+\usepackage{todonotes}
+\usepackage{biblatex}
+\usepackage{listings}
+\usepackage{parskip}
+
+\title{
+    Project Management \\
+    \textbf{ 
+        User Stories for\\ 
+        Web Application: \\
+        \textit{Google CookBook}
+    }
+}
+\author{
+    Marica Pasquali \\ 
+    (\href{mailto:marica.pasquali@studio.unibo.it}{marica.pasquali@studio.unibo.it})
+}
+
+\begin{document}
+
+\maketitle
+\newpage
+\tableofcontents
+\newpage
+
+\section{Servizio di autenticatione}
+\subsection{Registrazione}
+\begin{itemize}
+    \item Come Utente Anonimo, voglio iscrivermi alla piattaforma in modo da sfruttare tutte le funzionalità 
+    che la piattaforma offre
+\end{itemize}
+
+\subsection{Login}
+\begin{itemize}
+    \item Come Utente (non anonimo), voglio effettuare il log-in alla piattaforma con username e password 
+    in modo da poter accedere alle mie informazioni personali e sfruttare tutte le funzionalità che 
+    la piattaforma offre
+\end{itemize}
+
+\subsection{Gestione di un account utente}
+\begin{itemize}
+    \item Come Utente Registato, voglio poter ricevere notifiche nel caso vengono modificate le mie 
+    informazioni personali in modo tale da sapere se qualcuno abbia violato il mio account
+    \item Come Utente Registato, voglio poter cancellare il mio account perchè non mi interessa più 
+    prendere parte alla community
+\end{itemize}
+
+\subsection{Gestione degli utenti}
+\begin{itemize}
+    \item Come Utente Amministratore, voglio poter bandire un Utente Registrato (ossia cancellare il suo account)
+    perchè ha violato le condizioni di utilizzo della piattaforma.
+\end{itemize}
+
+\section{Servizio di gestione delle ricette}
+\subsection{Gestione degli alimenti/ingredienti}
+\begin{itemize}
+    \item Come Utente Amministratore o Utente Registrato, voglio inserire un nuovo alimento nella piattaforma 
+    così che un altro utente non debba farlo
+    \item Come Utente Registrato, voglio poter gestire una lista della spesa per poter ricordare di comprare 
+    gli alimenti che mi servono per cucinare
+\end{itemize}
+
+\subsection{Gestione delle ricette di un utente}
+\begin{itemize}
+    \item Come Utente Registrato, voglio poter postare una mia ricetta così da farla conoscere alla community 
+    \item Come Utente Registrato, voglio poter salvare delle ricette senza però condividerle così da migliorarle 
+    e postarle successivamente
+    \item Come Utente Registato, voglio poter ricevere notifiche nelle nuove ricette degli altri utenti 
+    così da poter essere sempre aggiornato sulle ultime novità
+\end{itemize}
+
+\subsection{Ricerca di specifiche ricette}
+\begin{itemize}
+    \item Come Utente Generico, voglio `sfogliare' il catalogo delle ricette così da poter sceglierne una da 
+    cucinare
+    \item Come Utente Generico, voglio cercare una ricetta senza latticini così da poter cucinare per la mia 
+    ragazza senza che stia male perchè intollerante al lattosio
+    \item Come Utente Generico, voglio cercare una ricetta coreana così da impressionare i miei amici con una
+    ricetta esotica
+    \item Come Utente Generico, voglio cercare una ricetta contenente il tofu per poterlo consumare perchè è 
+    in prossimita alla scadenza
+    \item Come Utente Generico, voglio cercare una ricetta per fare un dolce per il compleanno di mio figlio 
+\end{itemize}
+
+\subsection{Gestione dei giudizi/commenti alle ricette postate}
+\begin{itemize}
+    \item Come Utente Generico, voglio poter mette un like o scrivere un commento a una ricetta postata per 
+    esprimere la mia opinione e/o per dare dei suggerimenti
+    \item Come Utente Registato, voglio poter ricevere notifiche nel caso un utente commentasse un mio commento 
+    così da poter essere sempre aggiornato sulle ultime novità
+    \item Come Utente Amministratore, voglio poter cancellare un commento segnalato da un utente generico perchè 
+    il suo contenuto non è appropriato 
+\end{itemize}
+
+\section{Servizio di gestione delle comunicazioni online}
+\subsection{Gestione delle amicizie tra gli utenti}
+\begin{itemize}
+    \item Come Utente Registrato, voglio chiedere l'amicizia a un utente registrato così da creare una cerchia 
+    più ristretta della community
+    \item Come Utente Registrato, voglio poter ricevere notifiche sulle richiede di amicizia così da essere 
+    informato subito
+\end{itemize}
+
+\subsection{Gestione delle chat tra utenti}
+\begin{itemize}
+    \item Come Utente Registrato, voglio contattare in modo privato delle mie amice così da poter discutere di 
+    cucina con loro senza discutere gli altri utenti
+    \item Come Utente Registrato, voglio contattare l'amministatore della piattaforma perché ho riscontato un 
+    problema nella creazione di una ricetta
+    \item Come Utente Registrato, voglio scambiare le mie ricette (anche quelle non pubblicate) con le mie amiche 
+    così da poter ampliare e migliorare la mia conoscienza della cucina    
+\end{itemize}
+
+\newpage
+
+\section*{Glossario}
+
+\textit{\textbf{Utente anonimo}}: è un utente che non è registrato alla piattaforma
+
+\textit{\textbf{Utente registrato}}: è un utente che ha effettuato la registrazione alla piattaforma
+
+\textit{\textbf{Utente generico}}: è un utente anonimo oppure un utente registrato
+
+\textit{\textbf{Utente amministratore}}: è un utente che gestisce l'amministrazione della piattaforma e quindi a privilegi di amministratore
+
+\end{document}
