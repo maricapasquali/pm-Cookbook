@@ -6,6 +6,8 @@
 \usepackage{biblatex}
 \usepackage{listings}
 \usepackage{parskip}
+\usepackage{xurl}
+
 
 \title{
     Project Management \\
@@ -61,9 +63,7 @@ contenente gli avanzamenti decisi nella riunione di pianificazione dello Sprint.
 Nel corso di ogni Sprint, il team crea porzioni complete di un prodotto. 
 L'insieme delle funzionalità che vengono inserite in un determinato Sprint provengono dal \textit{Product Backlog}. 
 La selezione di quali item del backlog verranno effettivamente inseriti nello Sprint viene effettuata durante lo Sprint Planning meeting. 
-Durante questo meeting, il Product Owner \footnote{\textbf{Product Owner} è la persona che ha la responsabilità di massimizzare il valore 
-del prodotto e del lavoro svolto dal team di sviluppo e la responsabilità esclusiva di gestione del Product Backlog}
-comunica al team quali item del Product Backlog vorrebbe che fossero completati (quelli con più alta priorità). 
+Durante questo meeting, il \nameref{product-owner} comunica al team quali item del Product Backlog vorrebbe che fossero completati (quelli con più alta priorità). 
 Il team determina quindi quanti di questi pensa di poter completare durante il prossimo Sprint e registra questo dato nello \textit{Sprint Backlog}.
 Lo Sprint Backlog è di esclusiva proprietà del team di sviluppo, quindi durante uno Sprint la modifica dello Sprint Backlog non è consentita 
 a nessun altro ad eccezione del team di sviluppo. 
@@ -93,6 +93,7 @@ La \textit{Sprint Retrospective} è un'occasione per lo Scrum Team per ispeziona
 miglioramento da attuare durante il prossimo Sprint. Lo Scrum Team si riunisce per la Sprint Retrospective dopo 
 la Sprint Review e prima del successivo Sprint Planning.
 
+\newpage
 \subsection{Artefatti}
 Nella metodologia Scrum non c'è la necessità di creare la Work Breakdown Structure (WBS) 
 perché può essere sostituita dal \textit{Product Backlog} e dal \textit{Sprint Backlog}.
@@ -141,7 +142,56 @@ il che significa che deve essere utilizzabile e deve incontrare la definizione d
 Team. Deve essere utilizzabile indipendentemente dal fatto che il Product Owner decida di rilasciarlo
 realmente o meno.
 
+\newpage
+\subsection{Scrum Team}
+Lo Scrum Team è formato da un \textit{Product Owner}, dal \textit{Team di Sviluppo} e da uno \textit{Scrum Master}. 
+Gli Scrum Team sono auto-organizzati e cross-funzionali. I Team auto-organizzati scelgono come meglio compiere
+il lavoro invece di essere diretti da altri al di fuori del team. I Team cross-funzionali hanno tutte le
+competenze necessarie per realizzare il lavoro senza dover dipendere da nessuno al di fuori del team. Il
+modello di team in Scrum è progettato per ottimizzare la flessibilità, la creatività e la produttività.
+Gli Scrum Team rilasciano i prodotti in modo iterativo e incrementale, massimizzando le opportunità di
+feedback. 
 
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=\textwidth]{./imgs/scrum-team.jpg}
+    \caption{Scrum Team}
+\end{figure}
+
+\newpage
+\subsubsection{Product Owner}\label{product-owner}
+Il Product Owner è la persona che ha la responsabilità di massimizzare il valore del prodotto e del lavoro svolto dal team di sviluppo 
+e la responsabilità esclusiva di gestione del Product Backlog, ossia decide quali attività mettere in cima in base al valore di business, 
+ma in pratica il termine ``valore'' può essere talmente soggettivo da essere influenzato dai desideri e le aspettative degli Sponsors, 
+da strategie e obiettivi, da rischi, benefici e miglioramenti che si intendono apportare al prodotto.
+Il Product Owner è diverso dal tradizionale Product Manager in quanto interagisce attivamente con il team, ne gestisce 
+le priorità e ne esamina il lavoro, piuttosto che delegare tutte le decisioni relative allo sviluppo ad un Project Manager. 
+Affinché il Product Owner abbia successo, l'intera organizzazione deve rispettare le sue decisioni relative al prodotto. Decisioni che 
+sono rese trasparenti e visibili attraverso l'ordinamento del Product Backlog.
+
+\subsubsection{Team di sviluppo}
+Il team di sviluppo costruisce il prodotto e le funzionalità indicate dal Product Owner attraverso il Product Backlog. 
+Questo team include al suo interno tutto un insieme di skill che sono necessarie allo svolgimento del progetto, senza dover dipendere da team esterni. 
+Come già detto in precedenza il team è anche autogestito e gode di un alto livello di autonomia e di responsabilità.
+All'inizio di ciascuno Sprint il Product Owner espone le priorità e il team decide autonomamente su quali attività impegnarsi, facendo il possibile 
+per raggiungere il risultato con le modalità di lavoro che ritiene adeguate.
+Il Team non solo sviluppa quanto richiesto, ma dà anche indicazioni e suggerimenti al Product Owner al fine di migliorare il prodotto e renderlo ottimale.
+In Scrum si ottengono i risultati migliori quando il team è dedicato al 100\% sul progetto. 
+
+
+\subsubsection{Scrum Master}
+
+Lo Scrum Master ha il compito di aiutare il team ad essere efficace e a raggiungere gli obiettivi attraverso la pratica di Scrum. 
+E' una figura chiave nel facilitare il gruppo a risolvere gli impedimenti e nel proteggerlo da ogni rumore esterno durante lo Sprint.
+Lo Scrum Master è un vero leader a servizio non solo del team ma anche dell'organizzazione.
+Un buon Scrum Master educa e guida l'intero gruppo di lavoro all'uso di Scrum e fa in modo che chiunque, inclusi il Product Owner e il management 
+dell'azienda, ne comprendano e ne seguano i principi e le pratiche. È importante che lo Scrum Master sia appassionato e che lavori energicamente 
+alla risoluzione degli impedimenti che possono compromettere la riuscita di uno Sprint o di un intero progetto.
+Il ruolo di Scrum Master (non sempre) è assunto da uno dei membri del gruppo.
+A differenza di un Project Manager, lo Scrum Master non assegna task ai membri del team e non dice loro che cosa devono fare, ma facilita il processo 
+aiutando il team ad auto gestirsi e organizzarsi.
+
+\newpage
 \subsection{Strumenti}
 
 \subsubsection{Scrum Board}
@@ -174,6 +224,7 @@ oppure utilizzando il QR Code seguente:
     \caption{QR Code per accedere alla Scrum Board di \textit{Google CookBook} in Trello}
 \end{figure}
 
+\newpage
 Di seguito viene illustrata una preview della Scrum Board.
 
 \begin{figure}[h]
